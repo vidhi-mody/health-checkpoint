@@ -1,11 +1,16 @@
+/**
+ *
+ * @param {number} val
+ * @returns
+ */
 function validate1(val) {
-  v1 = document.getElementById("name");
-  v2 = document.getElementById("email");
-  v3 = document.getElementById("mobile");
+  const v1 = document.getElementById("name");
+  const v2 = document.getElementById("email");
+  const v3 = document.getElementById("mobile");
 
-  flag1 = true;
-  flag2 = true;
-  flag3 = true;
+  let flag1 = true;
+  let flag2 = true;
+  let flag3 = true;
 
   if (val >= 1 || val == 0) {
     if (v1.value == "") {
@@ -37,7 +42,27 @@ function validate1(val) {
     }
   }
 
-  flag = flag1 && flag2;
+  const flag = flag1 && flag2;
+
+  return flag;
+}
+
+function validate2(val) {
+  const v1 = document.getElementById("exercise");
+
+  let flag1 = true;
+
+  if (val >= 2 || val == 0) {
+    if (v1.value == "") {
+      v1.style.borderColor = "red";
+      flag1 = false;
+    } else {
+      v1.style.borderColor = "white";
+      flag1 = true;
+    }
+  }
+
+  const flag = flag1;
 
   return flag;
 }
@@ -48,16 +73,18 @@ $(document).ready(function () {
 
   $(".next").click(function () {
     let str1 = "next1";
+    let str2 = "next2";
 
-    if (!str1.localeCompare($(this).attr("id")) && validate1(0) == true) {
+    if (
+      (!str1.localeCompare($(this).attr("id")) && validate1(0) == true) ||
+      (!str2.localeCompare($(this).attr("id")) && validate2(0) == true)
+    ) {
       val1 = true;
     } else {
       val1 = false;
     }
 
-    if (
-      (!str1.localeCompare($(this).attr("id")) && val1 == true)
-    ) {
+    if (!str1.localeCompare($(this).attr("id")) && val1 == true) {
       current_fs = $(this).parent().parent().parent();
       next_fs = $(this).parent().parent().parent().next();
 

@@ -32,6 +32,8 @@
             <li class="step0" id="step2">Step 2</li>
             <li class="step0" id="step3">Step 3</li>
           </ul>
+
+          <!-- Section 1 -->
           <div class="card b-0 show">
             <div class="row justify-content-center">
               <div class="col-lg-10 col-md-11">
@@ -88,6 +90,40 @@
               </div>
             </div>
           </div>
+          <!-- Section 1 End -->
+
+          <!-- Section 2 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <label class="form-control-label">I exercise or do some movement?</label>
+                  <select id="exercise" name="exercise" class="" onblur="validate2(1)" required>
+                    <option value="10">10 (Everyday)</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5 (Sometimes)</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1 (Never)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div
+                  class="fa fa-long-arrow-right next"
+                  id="next2"
+                  onclick="validate2(0)"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 2 End -->
           <div class="card b-0">
             <div class="row d-flex justify-content-center text-center">
               <div class="confirm">
