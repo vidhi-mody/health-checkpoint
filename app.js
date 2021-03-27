@@ -47,44 +47,34 @@ function validate1(val) {
   return flag;
 }
 
-function validate2(val) {
-  const v1 = document.getElementById("exercise");
-
-  let flag1 = true;
-
-  if (val >= 2 || val == 0) {
-    if (v1.value == "") {
-      v1.style.borderColor = "red";
-      flag1 = false;
-    } else {
-      v1.style.borderColor = "white";
-      flag1 = true;
-    }
-  }
-
-  const flag = flag1;
-
-  return flag;
-}
-
 $(document).ready(function () {
   let current_fs, next_fs, previous_fs;
   let val1;
 
   $(".next").click(function () {
     let str1 = "next1";
-    let str2 = "next2";
 
-    if (
-      (!str1.localeCompare($(this).attr("id")) && validate1(0) == true) ||
-      (!str2.localeCompare($(this).attr("id")) && validate2(0) == true)
-    ) {
+    const handlePrevNext = () => {
+      let flag = false;
+
+      for(let i=2; i<=8; i++) {
+        flag = flag || !`next${i}`.localeCompare($(this).attr("id"));
+      }
+
+      return flag;
+    }
+
+
+    if (!str1.localeCompare($(this).attr("id")) && validate1(0) == true) {
       val1 = true;
     } else {
       val1 = false;
     }
 
-    if (!str1.localeCompare($(this).attr("id")) && val1 == true) {
+    if (
+      (!str1.localeCompare($(this).attr("id")) && val1 == true) ||
+      handlePrevNext()
+    ) {
       current_fs = $(this).parent().parent().parent();
       next_fs = $(this).parent().parent().parent().next();
 

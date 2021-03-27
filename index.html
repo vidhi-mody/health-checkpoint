@@ -97,141 +97,605 @@
             <div class="row justify-content-center">
               <div class="col-lg-10 col-md-11">
                 <div class="form-group">
-                  <label class="form-control-label"
-                    >I exercise or do some movement?</label
-                  >
-                  <br />
-                  <select
-                    id="exercise"
-                    name="exercise"
-                    class=""
-                    onblur="validate2(1)"
-                    required
-                  >
-                    <option value="10">10 (Everyday)</option>
-                    <option value="9">9</option>
-                    <option value="8">8</option>
-                    <option value="7">7</option>
-                    <option value="6">6</option>
-                    <option value="5">5 (Sometimes)</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="1">1 (Never)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label"
-                    >I eat slowly and mindfully with few distractions?</label
-                  >
-                  <br />
-                  <select
-                    id="eat"
-                    name="eat"
-                    class=""
-                    onblur="validate2(2)"
-                    required
-                  >
-                    <option value="10">10 (Everytime)</option>
-                    <option value="9">9</option>
-                    <option value="8">8</option>
-                    <option value="7">7</option>
-                    <option value="6">6</option>
-                    <option value="5">5 (Sometimes)</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="1">1 (Never)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label"
-                    >I include colorful fruits and/or vegetables at most
-                    meals?</label
-                  >
-                  <br />
-                  <select
-                    id="fruits"
-                    name="fruits"
-                    class=""
-                    onblur="validate2(3)"
-                    required
-                  >
-                    <option value="10">10 (Everyday)</option>
-                    <option value="9">9</option>
-                    <option value="8">8</option>
-                    <option value="7">7</option>
-                    <option value="6">6</option>
-                    <option value="5">5 (Sometimes)</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="1">1 (Never)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label"
-                    >I include some lean protein at most meals?</label
-                  >
-                  <br />
-                  <select
-                    id="protein"
-                    name="protein"
-                    class=""
-                    onblur="validate2(4)"
-                    required
-                  >
-                    <option value="10">10 (Everyday)</option>
-                    <option value="9">9</option>
-                    <option value="8">8</option>
-                    <option value="7">7</option>
-                    <option value="6">6</option>
-                    <option value="5">5 (Sometimes)</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="1">1 (Never)</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label"
-                    >I mostly eat slow digesting high-fiber nutrient rich "smart
-                    carbohydrates" (like fruits, starchy vegetables, whole
-                    grains or beans/legumes.)?</label
-                  >
-                  <br />
-                  <select
-                    id="carbs"
-                    name="carbs"
-                    class=""
-                    onblur="validate2(5)"
-                    required
-                  >
-                    <option value="10">10 (Everyday)</option>
-                    <option value="9">9</option>
-                    <option value="8">8</option>
-                    <option value="7">7</option>
-                    <option value="6">6</option>
-                    <option value="5">5 (Sometimes)</option>
-                    <option value="4">4</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="1">1 (Never)</option>
-                  </select>
+                  <h4>I exercise or do some movement</h4>
+                  <ul>
+                    <li>
+                      <input type="radio" id="q1-1" name="q1" value="1" />
+                      <label for="q1-1">1 (Never)</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-2" name="q1" value="2" />
+                      <label for="q1-2">2</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-3" name="q1" value="3" />
+                      <label for="q1-3">3</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-4" name="q1" value="4" />
+                      <label for="q1-4">4</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="q1-5"
+                        name="q1"
+                        value="5"
+                        checked=""
+                      />
+                      <label for="q1-5">5 (Sometimes)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-6" name="q1" value="6" />
+                      <label for="q1-6">6</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-7" name="q1" value="7" />
+                      <label for="q1-7">7</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-8" name="q1" value="8" />
+                      <label for="q1-8">8</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-9" name="q1" value="9" />
+                      <label for="q1-9">9</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q1-10" name="q1" value="10" />
+                      <label for="q1-10">10 (Everyday)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="row d-flex justify-content-center">
               <div class="circle">
-                <div
-                  class="fa fa-long-arrow-right next"
-                  id="next2"
-                  onclick="validate2(0)"
-                ></div>
+                <div class="fa fa-long-arrow-right next" id="next2"></div>
               </div>
             </div>
           </div>
           <!-- Section 2 End -->
+
+          <!-- Section 3 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>I eat slowly and mindfully with few distractions</h4>
+                  <ul>
+                    <li>
+                      <input type="radio" id="q2-1" name="q2" value="1" />
+                      <label for="q2-1">1 (Never)</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-2" name="q2" value="2" />
+                      <label for="q2-2">2</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-3" name="q2" value="3" />
+                      <label for="q2-3">3</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-4" name="q2" value="4" />
+                      <label for="q2-4">4</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="q2-5"
+                        name="q2"
+                        value="5"
+                        checked
+                      />
+                      <label for="q2-5">5 (Sometimes)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-6" name="q2" value="6" />
+                      <label for="q2-6">6</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-7" name="q2" value="7" />
+                      <label for="q2-7">7</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-8" name="q2" value="8" />
+                      <label for="q2-8">8</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-9" name="q2" value="9" />
+                      <label for="q2-9">9</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q2-10" name="q2" value="10" />
+                      <label for="q2-10">10 (Everyday)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div class="fa fa-long-arrow-right next" id="next3"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 3 End -->
+
+          <!-- Section 4 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>
+                    I include colorful fruits and/or vegetables at most meals
+                  </h4>
+                  <ul>
+                    <li>
+                      <input type="radio" id="q3-1" name="q3" value="1" />
+                      <label for="q3-1">1 (Never)</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-2" name="q3" value="2" />
+                      <label for="q3-2">2</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-3" name="q3" value="3" />
+                      <label for="q3-3">3</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-4" name="q3" value="4" />
+                      <label for="q3-4">4</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        id="q3-5"
+                        name="q3"
+                        value="5"
+                        checked
+                      />
+                      <label for="q3-5">5 (Sometimes)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-6" name="q3" value="6" />
+                      <label for="q3-6">6</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-7" name="q3" value="7" />
+                      <label for="q3-7">7</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-8" name="q3" value="8" />
+                      <label for="q3-8">8</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-9" name="q3" value="9" />
+                      <label for="q3-9">9</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="q3-10" name="q3" value="10" />
+                      <label for="q3-10">10 (Everyday)</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div class="fa fa-long-arrow-right next" id="next4"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 4 End -->
+
+          <!-- Section 5 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>I include some lean protein at most meals</h4>
+                  <ul>
+                    <li>
+                      <input id="q4-1" name="q4" type="radio" value="1" />
+                      <label for="q4-1">1 (Never)</label>
+                      <div class="check">&nbsp;</div>
+                    </li>
+                    <li>
+                      <input id="q4-2" name="q4" type="radio" value="2" />
+                      <label for="q4-2">2</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-3" name="q4" type="radio" value="3" />
+                      <label for="q4-3">3</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-4" name="q4" type="radio" value="4" />
+                      <label for="q4-4">4</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input
+                        id="q4-5"
+                        checked="checked"
+                        name="q4"
+                        type="radio"
+                        value="5"
+                      />
+                      <label for="q4-5">5 (Sometimes)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-6" name="q4" type="radio" value="6" />
+                      <label for="q4-6">6</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-7" name="q4" type="radio" value="7" />
+                      <label for="q4-7">7</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-8" name="q4" type="radio" value="8" />
+                      <label for="q4-8">8</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-9" name="q4" type="radio" value="9" />
+                      <label for="q4-9">9</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q4-10" name="q4" type="radio" value="10" />
+                      <label for="q4-10">10 (Everyday)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div id="next5" class="fa fa-long-arrow-right next">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 5 End -->
+
+          <!-- Section 6 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>
+                    I mostly eat slow digesting high-fiber nutrient rich "smart
+                    carbohydrates" (like fruits, starchy vegetables, whole
+                    grains or beans/legumes.)
+                  </h4>
+                  <ul>
+                    <li>
+                      <input id="q5-1" name="q5" type="radio" value="1" />
+                      <label for="q5-1">1 (Never)</label>
+                      <div class="check">&nbsp;</div>
+                    </li>
+                    <li>
+                      <input id="q5-2" name="q5" type="radio" value="2" />
+                      <label for="q5-2">2</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-3" name="q5" type="radio" value="3" />
+                      <label for="q5-3">3</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-4" name="q5" type="radio" value="4" />
+                      <label for="q5-4">4</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input
+                        id="q5-5"
+                        checked="checked"
+                        name="q5"
+                        type="radio"
+                        value="5"
+                      />
+                      <label for="q5-5">5 (Sometimes)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-6" name="q5" type="radio" value="6" />
+                      <label for="q5-6">6</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-7" name="q5" type="radio" value="7" />
+                      <label for="q5-7">7</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-8" name="q5" type="radio" value="8" />
+                      <label for="q5-8">8</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-9" name="q5" type="radio" value="9" />
+                      <label for="q5-9">9</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q5-10" name="q5" type="radio" value="10" />
+                      <label for="q5-10">10 (Everyday)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div id="next6" class="fa fa-long-arrow-right next">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 6 End -->
+
+          <!-- Section 7 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>I mostly eat healthy fats</h4>
+                  <ul>
+                    <li>
+                      <input id="q6-1" name="q6" type="radio" value="1" />
+                      <label for="q6-1">1 (Never)</label>
+                      <div class="check">&nbsp;</div>
+                    </li>
+                    <li>
+                      <input id="q6-2" name="q6" type="radio" value="2" />
+                      <label for="q6-2">2</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-3" name="q6" type="radio" value="3" />
+                      <label for="q6-3">3</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-4" name="q6" type="radio" value="4" />
+                      <label for="q6-4">4</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input
+                        id="q6-5"
+                        checked="checked"
+                        name="q6"
+                        type="radio"
+                        value="5"
+                      />
+                      <label for="q6-5">5 (Sometimes)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-6" name="q6" type="radio" value="6" />
+                      <label for="q6-6">6</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-7" name="q6" type="radio" value="7" />
+                      <label for="q6-7">7</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-8" name="q6" type="radio" value="8" />
+                      <label for="q6-8">8</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-9" name="q6" type="radio" value="9" />
+                      <label for="q6-9">9</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q6-10" name="q6" type="radio" value="10" />
+                      <label for="q6-10">10 (Everyday)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div id="next7" class="fa fa-long-arrow-right next">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 7 End -->
+
+          <!-- Section 8 -->
+          <div class="card b-0">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-11">
+                <div class="form-group">
+                  <h4>I mostly eat healthy fats</h4>
+                  <ul>
+                    <li>
+                      <input id="q7-1" name="q7" type="radio" value="1" />
+                      <label for="q7-1">1 (Never)</label>
+                      <div class="check">&nbsp;</div>
+                    </li>
+                    <li>
+                      <input id="q7-2" name="q7" type="radio" value="2" />
+                      <label for="q7-2">2</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-3" name="q7" type="radio" value="3" />
+                      <label for="q7-3">3</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-4" name="q7" type="radio" value="4" />
+                      <label for="q7-4">4</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input
+                        id="q7-5"
+                        checked="checked"
+                        name="q7"
+                        type="radio"
+                        value="5"
+                      />
+                      <label for="q7-5">5 (Sometimes)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-6" name="q7" type="radio" value="6" />
+                      <label for="q7-6">6</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-7" name="q7" type="radio" value="7" />
+                      <label for="q7-7">7</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-8" name="q7" type="radio" value="8" />
+                      <label for="q7-8">8</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-9" name="q7" type="radio" value="9" />
+                      <label for="q7-9">9</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                    <li>
+                      <input id="q7-10" name="q7" type="radio" value="10" />
+                      <label for="q7-10">10 (Everyday)</label>
+                      <div class="check">
+                        <div class="inside">&nbsp;</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="circle">
+                <div id="next8" class="fa fa-long-arrow-right next">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <!-- Section 8 End -->
+
+          <!-- Section Last -->
           <div class="card b-0">
             <div class="row d-flex justify-content-center text-center">
               <div class="confirm">
