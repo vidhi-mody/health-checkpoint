@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vidhi-mody/health-checkpoint/issues"
   },
-  "homepage": "https://github.com/vidhi-mody/health-checkpoint#readme"
+  "homepage": "https://github.com/vidhi-mody/health-checkpoint#readme",
+  "dependencies": {
+    "mongoose": "^5.12.2"
+  }
 }
