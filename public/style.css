@@ -6,6 +6,14 @@ body {
   background-repeat: no-repeat;
 }
 
+#logo {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 15px;
+  top: 15px;
+}
+
 .fieldlabels {
   color: #455a64 !important;
   text-align: left;
@@ -264,4 +272,11 @@ input[type="radio"]:checked + label:before {
   border-left-color: transparent;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media (min-width: 786px) {
+  #logo {
+    width: 45px;
+    height: 45px;
+  }
 }
