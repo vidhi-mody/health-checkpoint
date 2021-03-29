@@ -57,7 +57,11 @@ $(document).ready(function () {
     const handlePrevNext = () => {
       let flag = false;
 
-      for (let i = 2; i <= 13; i++) {
+      for (let i = 0; i <= 13; i++) {
+        if(i == 1) {
+          continue;
+        }
+        
         flag = flag || !`next${i}`.localeCompare($(this).attr("id"));
       }
 
