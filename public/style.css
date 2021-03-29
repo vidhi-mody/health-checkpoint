@@ -2,7 +2,7 @@ body {
   color: #fff;
   overflow-x: hidden;
   height: 100%;
-  background-color: #112e4a;
+  background-color: #2d4f68;
   background-repeat: no-repeat;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .card {
-  background-color:#66bb6a;
+  background-color:#8bc53f;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 60px 40px 40px 40px;
   z-index: 0;
