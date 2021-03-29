@@ -44,7 +44,8 @@ module.exports = async (req, res) => {
   const Response = mongoose.model("Response", responseSchema);
 
   try {
-    const { name, email, mobile } = req.body;
+    const data = JSON.parse(req.body);
+    const { name, email, mobile } = data;
 
     const existingResponse = await Response.findOne({ email });
 
@@ -57,7 +58,7 @@ module.exports = async (req, res) => {
     let totalScore = 0;
 
     for (let i = 1; i <= 12; i++) {
-      totalScore += parseInt(req.body[`q${i}`]);
+      totalScore += parseInt(data[`q${i}`]);
     }
 
     const response = await Response.create({
@@ -71,6 +72,7 @@ module.exports = async (req, res) => {
       totalScore,
     });
   } catch (err) {
+    console.log(err);
     if (err instanceof ResponseExistsError) {
       res.status(409).send(err.name);
     } else if (err instanceof DatabaseError) {
