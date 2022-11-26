@@ -43,17 +43,17 @@ module.exports = async (req, res) => {
 
   const Response = mongoose.model("Response", responseSchema);
 
-  try {
-    const data = JSON.parse(req.body);
-    const { name, email, mobile } = data;
+//   try {
+//     const data = JSON.parse(req.body);
+//     const { name, email, mobile } = data;
 
-    const existingResponse = await Response.findOne({ email });
+//     const existingResponse = await Response.findOne({ email });
 
-    if (existingResponse) {
-      throw new ResponseExistsError(
-        "Response for this email has already been recorded"
-      );
-    }
+//     if (existingResponse) {
+//       throw new ResponseExistsError(
+//         "Response for this email has already been recorded"
+//       );
+//     }
 
     let totalScore = 0;
 
