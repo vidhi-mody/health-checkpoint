@@ -42,19 +42,7 @@ module.exports = async (req, res) => {
   });
 
   const Response = mongoose.model("Response", responseSchema);
-
-//   try {
-//     const data = JSON.parse(req.body);
-//     const { name, email, mobile } = data;
-
-//     const existingResponse = await Response.findOne({ email });
-
-//     if (existingResponse) {
-//       throw new ResponseExistsError(
-//         "Response for this email has already been recorded"
-//       );
-//     }
-
+  
     let totalScore = 0;
 
     for (let i = 1; i <= 12; i++) {
@@ -71,14 +59,5 @@ module.exports = async (req, res) => {
     res.status(200).json({
       totalScore,
     });
-  } catch (err) {
-    console.log(err);
-    if (err instanceof ResponseExistsError) {
-      res.status(409).send(err.name);
-    } else if (err instanceof DatabaseError) {
-      res.status(500).send(err.name);
-    } else {
-      res.status(500).send("Internal Server Error");
-    }
   }
 };
